@@ -9,3 +9,8 @@ class TestUser(unittest.TestCase):
         Set up method to run before each test cases.
         """
         self.new_user = User("James", "Muriuki", "0712345678", "james@ms.com")  # create user object
+    def tearDown(self):
+        """
+        tearDown method that does clean up after each test case has run.
+        """
+        User.users_array = []
