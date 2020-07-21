@@ -43,4 +43,10 @@ def del_cred(credential):
     """
     Function to delete all users credentials
     """
-    credential.delete_credential()    
+    credential.delete_credential()   
+
+def display_user():
+    """
+    Function that returns saved users
+    """
+    return User.display_users() 
