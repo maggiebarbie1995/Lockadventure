@@ -26,3 +26,9 @@ def save_user(user):
 def verify_user(first_name,pword):
     checking_user = Credential.check_user(first_name,pword)
     return checking_user
+
+def save_cred(credential):
+    """
+    Function to save user credentials
+    """
+    credential.save_credential()
