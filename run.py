@@ -9,3 +9,10 @@ def create_user(fname, lname, phone, email):
     """
     new_user = User(fname, lname, phone, email)
     return new_user
+
+def create_credential(uname, pword, email):
+    """
+    Function to create new user credentials
+    """
+    new_credential = Credential(uname, pword, email)
+    return new_credential
