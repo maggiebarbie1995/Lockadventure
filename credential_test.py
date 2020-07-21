@@ -31,4 +31,3 @@ class TestUser(unittest.TestCase):
         """
         self.new_credential.save_credential()  # save the new credential
         self.assertEqual(len(Credential.credential_array), 1)
-
