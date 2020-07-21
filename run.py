@@ -22,3 +22,7 @@ def save_user(user):
     Function to save user
     """
     user.save_user_details()
+
+def verify_user(first_name,pword):
+    checking_user = Credential.check_user(first_name,pword)
+    return checking_user
