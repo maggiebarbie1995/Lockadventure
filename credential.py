@@ -7,6 +7,7 @@ class Credential:
     pass
     credential_array = []
     user_credentials_list = []
+    
 @classmethod
 def check_user(cls,first_name,password):
     current_user = ''
