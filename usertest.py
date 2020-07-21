@@ -47,3 +47,23 @@ class TestUser(unittest.TestCase):
         method that returns a list of all users saved
         """
         self.assertEqual(User.display_users(), User.users_array)
+
+    def test_copy_credential(self):
+        self.new_credential.save_credentials()
+        twitter = Credential('joe','Twitter','joe','pswd100')
+        twitter.save_credentials()
+        find_credential = None
+        for credential in Credential.user_credentials_list:
+            find_credential =Credential.find_by_site_name(credential.site_name)
+            return pyperclip.copy(find_credential.password)
+        Credential.copy_credential(self.new_credential.site_name)
+        self.assertEqual('pswd100',pyperclip.paste())
+        print(pyperclip.paste())
+
+
+
+
+
+
+
+
