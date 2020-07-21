@@ -4,7 +4,7 @@ class User:
     """
     pass
 
-    users_array = []
+    users_list = []
 
     def __init__(self, first_name, last_name, phone_number, email):
         self.first_name = first_name
@@ -14,15 +14,15 @@ class User:
 
     def save_user_details(self):
         """
-        save_contact method saves contact objects into user_array
+        save_contact method saves contact objects into user_list
         """
-        User.users_array.append(self)   
+        User.users_list.append(self)   
 
     @classmethod
     def display_users(cls):
         """
-        method that returns the class array
+        method that returns the class list
         """
-        return cls.users_array
+        return cls.users_list
 
     

@@ -43,19 +43,19 @@ def del_cred(credential):
     """
     Function to delete all users credentials
     """
-    credential.delete_credential()   
+    credential.delete_credential()
 
 def display_user():
     """
     Function that returns saved users
     """
-    return User.display_users() 
+    return User.display_users()
 
 def display_cred():
     """
     function that returns saved user credentials
     """
-    return Credential.display_credential()  
+    return Credential.display_credential()
 
 def main():
 
@@ -173,4 +173,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    

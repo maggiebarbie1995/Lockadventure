@@ -14,7 +14,7 @@ class TestUser(unittest.TestCase):
         """
         tearDown method that does clean up after each test case has run.
         """
-        Credential.credential_array = []
+        Credential.credential_list = []
 
     def test_init(self):
         """
@@ -27,21 +27,17 @@ class TestUser(unittest.TestCase):
     def test_save_cred(self):
         """
         test_save_cred test case to test if the credential object is saved into
-         the credentials array
+         the credentials list
         """
         self.new_credential.save_credential()  # save the new credential
-        self.assertEqual(len(Credential.credential_array), 1)
+        self.assertEqual(len(Credential.credential_list), 1)
 
     def test_display_credentials(self):
         """
         method that returns a list of saved credentials
         """
-        self.assertEqual(Credential.display_credential(), Credential.credential_array)
+        self.assertEqual(Credential.display_credential(), Credential.credential_list)
 
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
-
