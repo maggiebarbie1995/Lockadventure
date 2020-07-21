@@ -7,7 +7,7 @@ class Credential:
     pass
     credential_array = []
     user_credentials_list = []
-    
+
 @classmethod
 def check_user(cls,first_name,password):
     current_user = ''
@@ -15,3 +15,9 @@ def check_user(cls,first_name,password):
         if (user.first_name == first_name and user.password == password):
             current_user = user.first_name
             return current_user
+
+ def __init__(self, user_name, password, email):
+        self.user_name = user_name
+        self.password = password
+        self.email = email
+
