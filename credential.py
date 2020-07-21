@@ -27,8 +27,8 @@ def save_credential(self):
         """
         Credential.credential_array.append(self)   
 
- @classmethod
-    def display_credential(cls):
+@classmethod
+def display_credential(cls):
         """
         method that returns the credential array
         """
