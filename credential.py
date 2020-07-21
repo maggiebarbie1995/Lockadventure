@@ -25,5 +25,12 @@ def save_credential(self):
         """
         save_contact method saves credentials objects into credential_array
         """
-        Credential.credential_array.append(self)       
+        Credential.credential_array.append(self)   
+
+ @classmethod
+    def display_credential(cls):
+        """
+        method that returns the credential array
+        """
+        return cls.credential_array   
 
